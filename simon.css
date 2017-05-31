@@ -1,0 +1,45 @@
+.blocks-container {
+  width: 500px;
+  margin: 50px auto;
+  border: solid 1px black;
+}
+
+.square {
+  cursor: pointer;
+  padding-top: 100px;
+}
+
+#red {
+  background-color: red;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#green {
+  background-color: green;
+}
+
+#top-container {
+  width: 50%;
+  float: left;
+}
+
+#bottom-container {
+  width: 50%;
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+}
