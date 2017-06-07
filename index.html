@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="simon.css">
+  <title>Simon Game</title>
+</head>
+<body>
+
+  <div class="blocks-container ">
+    <div id="top-container">
+      <div class="square" id="red" data-color-id="1"></div>
+      <div class="square" id="blue" data-color-id="3"></div>
+    </div>
+    <div id="bottom-container clear">
+      <div class="square" id="yellow" data-color-id="2"></div>
+      <div class="square" id="green" data-color-id="4"></div>
+    </div>
+
+  </div>
+  <button class="startBtn btn">Start</button>
+  <button class="strictBtn btn">Strict</button>
+  <div class="powerSwitch btn"></div>
+  <div class="count-status">0</div>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="simon.js"></script>
+</html>
