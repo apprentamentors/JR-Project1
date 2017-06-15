@@ -11,7 +11,10 @@
 
 #red {
   background-color: red;
+<<<<<<< HEAD
   transition: background-color 1s;
+=======
+>>>>>>> 4542e73578fd336dfdb95e7e636d4f0b479a480f
 }
 
 #blue {
@@ -22,10 +25,13 @@
   background-color: yellow;
 }
 
+<<<<<<< HEAD
 #yellow-clicked {
   background-color: #ffffa8;
 }
 
+=======
+>>>>>>> 4542e73578fd336dfdb95e7e636d4f0b479a480f
 #green {
   background-color: green;
 }
@@ -48,7 +54,10 @@
   display: block;
   margin: 0 auto;
 }
+<<<<<<< HEAD
 
 .count-status {
   text-align: center;
 }
+=======
+>>>>>>> 4542e73578fd336dfdb95e7e636d4f0b479a480f
