@@ -22,7 +22,7 @@ var Game = (function() {
       constructor: Game,
 
       startGame: function() {
-        
+
 
         if (this.gameState.start == false) {
           this.gameState.start = true;
@@ -32,6 +32,17 @@ var Game = (function() {
         }
 
 
+      },
+
+      strictMode: function() {
+        console.log('strict');
+        this.gameState.strict = !this.gameState.strict;
+        if (this.gameState.strict == true) {
+          $('.strict').html('on');
+        }
+        else {
+          $('.strict').html('off');
+        }
       },
 
       eventHandler: function() {
@@ -83,6 +94,12 @@ var Game = (function() {
       },
 
       reRunGameSeq: function() {
+        if (this.gameState.strict == true) {
+          this.gameSeq = [];
+          this.gameState.count = 0;
+          this.render(); 
+          this.gameSeq.push(Math.floor(Math.random() * 4 + 1));
+        }
         setTimeout(function() {
           $('.wrong').html('');
         },1000)
@@ -93,6 +110,7 @@ var Game = (function() {
         var self = this;
 
         var i = 0;
+
         function run() {
             this.player.playerState.turn = false;
             setTimeout(function() {
